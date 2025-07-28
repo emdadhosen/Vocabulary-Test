@@ -979,7 +979,7 @@
         // Copy-Paste Modal Elements
         const copyPasteModal = document.getElementById('copyPasteModal');
         const englishPasteInput = document.getElementById('englishPasteInput');
-        const banglaPasteInput = document.getElementById('banglaPasteInput');
+        const banglaPasteInput = document = document.getElementById('banglaPasteInput');
         const processWordsButton = document.getElementById('processWordsButton');
         const closeCopyPasteModal = document.getElementById('closeCopyPasteModal');
 
@@ -1355,6 +1355,7 @@
                 showModal("Success", `Quiz set "${setName}" created successfully!`, "alert");
             }
             saveQuizSetsToLocalStorage(); // Save to localStorage
+            updateQuizSetsListUI(); // <--- এই লাইনটি যোগ করা হয়েছে
             clearCreateEditForm();
             showScreen('manageSetsScreen'); // Go back to manage sets
         }
